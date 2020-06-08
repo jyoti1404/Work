@@ -39,14 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
             TextView appointment = dialog.findViewById(R.id.appointment);
             appointment.setText("Tap to Book \n your Appointment");
+            appointment.setTextSize(18);
 
             float text1size = getResources().getDimension(R.dimen.tab_text1_margin_start);
             appointment.setPadding((int) text1size, 0, 0, 0);
-            appointment.setTextSize(Float.parseFloat("18sp"));
+
 
             TextView notification = dialog.findViewById(R.id.notification);
             notification.setText("Tap to see \n new notifications");
-            appointment.setTextSize(Float.parseFloat("18sp"));
+            notification.setTextSize(18);
 
             ImageView arrow1 = dialog.findViewById(R.id.arrow1);
             arrow1.setImageResource(R.drawable.arrow1_removebg);
@@ -64,11 +65,11 @@ public class MainActivity extends AppCompatActivity {
 //
             TextView add = dialog.findViewById(R.id.add);
             add.setText("Tap to add \n a patient");
-            appointment.setTextSize(Float.parseFloat("18sp"));
+            add.setTextSize(18);
 
             TextView queue = dialog.findViewById(R.id.queue);
             queue.setText("Patient Queue");
-            appointment.setTextSize(Float.parseFloat("18sp"));
+            queue.setTextSize(18);
 
             ImageView arrow2 = dialog.findViewById(R.id.arrow2);
             arrow2.setImageResource(R.drawable.arrow2_removebg);
