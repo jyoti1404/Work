@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="arrow2_margin_end">62dp</dimen>
+    <dimen name="arrow1_margin_end">15dp</dimen>
+    <dimen name="arrow3_margin_end">20dp</dimen>
+
+    <dimen name="tab_arrow2_margin_start">230dp</dimen>
+    <dimen name="tab_text1_margin_start">250dp</dimen>
+    <dimen name="tab_text2_margin_start">380dp</dimen>
+    <dimen name="tab_arrow1_margin_start">200dp</dimen>
+
+</resources>
