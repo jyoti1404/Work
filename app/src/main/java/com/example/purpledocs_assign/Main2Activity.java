@@ -109,7 +109,7 @@ public class Main2Activity extends AppCompatActivity {
                 dialog1.show();
 
             }
-            getSharedPreferences("PREFERENCE2", MODE_PRIVATE).edit().putBoolean("isFirstRun2", true).commit();
+            getSharedPreferences("PREFERENCE2", MODE_PRIVATE).edit().putBoolean("isFirstRun2", false).commit();
 
         }else {
             if (isFirstRun2){
