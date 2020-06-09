@@ -44,14 +44,18 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView appointment = dialog.findViewById(R.id.appointment);
                 appointment.setText("Tap to Book \n your Appointment");
-                appointment.setTextSize(18);
+                appointment.setTextSize(22);
+                Animation textanimation1 =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                appointment.startAnimation(textanimation1);
 
 //                float text1size = getResources().getDimension(R.dimen.tab_text1_margin_start);
 //                appointment.setPadding((int) text1size, 0, 0, 0);
 
                 TextView notification = dialog.findViewById(R.id.notification);
                 notification.setText("Tap to see \n new notifications");
-                notification.setTextSize(18);
+                notification.setTextSize(22);
 
                 ImageView arrow1 = dialog.findViewById(R.id.arrow1);
                 arrow1.setImageResource(R.drawable.arrow1_removebg);
@@ -69,20 +73,20 @@ public class MainActivity extends AppCompatActivity {
 //
                 TextView add = dialog.findViewById(R.id.add);
                 add.setText("Tap to add \n a patient");
-                add.setTextSize(18);
+                add.setTextSize(22);
+                Animation textanimation2 =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                add.startAnimation(textanimation2);
 
                 TextView queue = dialog.findViewById(R.id.queue);
                 queue.setText("Patient Queue");
-                queue.setTextSize(30);
+                queue.setTextSize(40);
 
                 ImageView arrow2 = dialog.findViewById(R.id.arrow2);
                 arrow2.setImageResource(R.drawable.arrow2_removebg);
 //                float arrow2size = getResources().getDimension(R.dimen.tab_arrow2_margin_start);
 //                arrow2.setPadding((int) arrow2size, 0, 0, 0);
-                Animation animation3 =
-                        AnimationUtils.loadAnimation(getApplicationContext(),
-                                R.anim.blink);
-                arrow2.startAnimation(animation3);
 
                 ImageView arrow3 = dialog.findViewById(R.id.arrow3);
                 arrow3.setImageResource(R.drawable.arrow3_removebg);
@@ -99,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-            getSharedPreferences("PREFERENCE1", MODE_PRIVATE).edit().putBoolean("isFirstRun1", true);
+            getSharedPreferences("PREFERENCE1", MODE_PRIVATE).edit().putBoolean("isFirstRun1", false).commit();
 
         }
         else{
@@ -112,6 +116,11 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView appointment = dialog.findViewById(R.id.appointment);
                 appointment.setText("Tap to Book \n your Appointment");
+                Animation textanimation1 =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                appointment.startAnimation(textanimation1);
+
                 TextView notification = dialog.findViewById(R.id.notification);
                 notification.setText("Tap to see \n new notifications");
 
@@ -131,7 +140,10 @@ public class MainActivity extends AppCompatActivity {
 //
                 TextView add = dialog.findViewById(R.id.add);
                 add.setText("Tap to add \n a patient");
-
+                Animation textanimation4 =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                add.startAnimation(textanimation4);
 
                 TextView queue = dialog.findViewById(R.id.queue);
                 queue.setText("Patient Queue");

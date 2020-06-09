@@ -33,7 +33,6 @@ public class Main2Activity extends AppCompatActivity {
 
         Configuration config1 = getResources().getConfiguration();
 
-
         if (config1.smallestScreenWidthDp >= 600){
             if (isFirstRun2){
                 dialog1 = new Dialog(Main2Activity.this, R.style.Theme_AppCompat_Translucent);
@@ -48,6 +47,11 @@ public class Main2Activity extends AppCompatActivity {
 
                 TextView caseno = dialog1.findViewById(R.id.caseno);
                 caseno.setText("Type the number \n of patient to be \n searched");
+                caseno.setTextSize(20);
+                Animation noanimation =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                caseno.startAnimation(noanimation);
 
                 ImageView arrow5 = dialog1.findViewById(R.id.arrow5);
                 arrow5.setImageResource(R.drawable.arrow6_removebg);
@@ -58,6 +62,11 @@ public class Main2Activity extends AppCompatActivity {
 
                 TextView name = dialog1.findViewById(R.id.name);
                 name.setText("Type the name \n of patient to be \n searched");
+                name.setTextSize(20);
+                Animation nameanimation =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                name.startAnimation(nameanimation);
 
                 ImageView arrow6 = dialog1.findViewById(R.id.arrow6);
                 arrow6.setImageResource(R.drawable.arrow7_removebg);
@@ -68,6 +77,11 @@ public class Main2Activity extends AppCompatActivity {
 
                 TextView contact = dialog1.findViewById(R.id.contact);
                 contact.setText("Type the contact \n no of patient \n (upto 15 digits)");
+                contact.setTextSize(20);
+                Animation contactanimation =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                contact.startAnimation(contactanimation);
 
                 ImageView arrow7 = dialog1.findViewById(R.id.arrow7);
                 arrow7.setImageResource(R.drawable.arrow8_removebg);
@@ -78,22 +92,24 @@ public class Main2Activity extends AppCompatActivity {
 
                 TextView email = dialog1.findViewById(R.id.email);
                 email.setText("Type the email \n of patient to be \n searched");
+                email.setTextSize(20);
+                Animation emailanimation =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                email.startAnimation(emailanimation);
 
                 ImageView arrow8 = dialog1.findViewById(R.id.arrow8);
                 arrow8.setImageResource(R.drawable.arrow9_removebg);
-                Animation animation8 =
-                        AnimationUtils.loadAnimation(getApplicationContext(),
-                                R.anim.blink);
-                arrow8.startAnimation(animation8);
 
                 TextView search = dialog1.findViewById(R.id.search);
                 search.setText("Tap here to \n search the patient");
+                search.setTextSize(20);
 
                 dialog1.setCancelable(true);
                 dialog1.show();
 
             }
-            getSharedPreferences("PREFERENCE2", MODE_PRIVATE).edit().putBoolean("isFirstRun2", false).commit();
+            getSharedPreferences("PREFERENCE2", MODE_PRIVATE).edit().putBoolean("isFirstRun2", true).commit();
 
         }else {
             if (isFirstRun2){
@@ -109,6 +125,10 @@ public class Main2Activity extends AppCompatActivity {
 
                 TextView caseno = dialog1.findViewById(R.id.caseno);
                 caseno.setText("Type the number \n of patient to be \n searched");
+                Animation noanimation =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                caseno.startAnimation(noanimation);
 
                 ImageView arrow5 = dialog1.findViewById(R.id.arrow5);
                 arrow5.setImageResource(R.drawable.arrow6_removebg);
@@ -119,6 +139,10 @@ public class Main2Activity extends AppCompatActivity {
 
                 TextView name = dialog1.findViewById(R.id.name);
                 name.setText("Type the name \n of patient to be \n searched");
+                Animation nameanimation =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                name.startAnimation(nameanimation);
 
                 ImageView arrow6 = dialog1.findViewById(R.id.arrow6);
                 arrow6.setImageResource(R.drawable.arrow7_removebg);
@@ -129,6 +153,10 @@ public class Main2Activity extends AppCompatActivity {
 
                 TextView contact = dialog1.findViewById(R.id.contact);
                 contact.setText("Type the contact \n no of patient \n (upto 15 digits)");
+                Animation contactanimation =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                contact.startAnimation(contactanimation);
 
                 ImageView arrow7 = dialog1.findViewById(R.id.arrow7);
                 arrow7.setImageResource(R.drawable.arrow8_removebg);
@@ -139,13 +167,13 @@ public class Main2Activity extends AppCompatActivity {
 
                 TextView email = dialog1.findViewById(R.id.email);
                 email.setText("Type the email \n of patient to be \n searched");
+                Animation emailanimation =
+                        AnimationUtils.loadAnimation(getApplicationContext(),
+                                R.anim.blink);
+                email.startAnimation(emailanimation);
 
                 ImageView arrow8 = dialog1.findViewById(R.id.arrow8);
                 arrow8.setImageResource(R.drawable.arrow9_removebg);
-                Animation animation8 =
-                        AnimationUtils.loadAnimation(getApplicationContext(),
-                                R.anim.blink);
-                arrow8.startAnimation(animation8);
 
                 TextView search = dialog1.findViewById(R.id.search);
                 search.setText("Tap here to \n search the patient");

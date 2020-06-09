@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -55,8 +56,9 @@
         android:fontFamily="serif"
         android:text="Tap to see \n new notifications"
         android:textAlignment="center"
-        android:textColor="#2E8022"
+        android:textColor="#172365"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/appointment"
@@ -70,8 +72,9 @@
         android:fontFamily="serif"
         android:text="Tap to Book \n your Appointment"
         android:textAlignment="center"
-        android:textColor="#2E8022"
+        android:textColor="#172365"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.348"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,17 +85,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/arrow3"
-        android:layout_marginTop="4dp"
         android:background="@null"
         android:fontFamily="serif"
         android:text="Tap to add \n a patient"
         android:textAlignment="center"
-        android:textColor="#2E8022"
+        android:textColor="#172365"
         android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/notification"
-        app:layout_constraintTop_toBottomOf="@+id/notification" />
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="@+id/notification"
+        app:layout_constraintTop_toTopOf="@+id/arrow3"
+        app:layout_constraintVertical_bias="0.211" />
 
     <TextView
         android:id="@+id/queue"
@@ -101,7 +106,7 @@
         android:layout_centerInParent="true"
         android:background="@null"
         android:text="Patient Queue"
-        android:textColor="#2E8022"
+        android:textColor="#172365"
         android:textSize="32sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
