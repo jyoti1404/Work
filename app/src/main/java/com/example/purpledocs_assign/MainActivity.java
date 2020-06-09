@@ -69,15 +69,22 @@ public class MainActivity extends AppCompatActivity {
 
             TextView queue = dialog.findViewById(R.id.queue);
             queue.setText("Patient Queue");
-            queue.setTextSize(18);
+            queue.setTextSize(30);
 
             ImageView arrow2 = dialog.findViewById(R.id.arrow2);
             arrow2.setImageResource(R.drawable.arrow2_removebg);
             float arrow2size = getResources().getDimension(R.dimen.tab_arrow2_margin_start);
             arrow2.setPadding((int) arrow2size, 0, 0, 0);
+            Animation animation3 =
+                    AnimationUtils.loadAnimation(getApplicationContext(),
+                            R.anim.blink);
+            arrow2.startAnimation(animation3);
 
             ImageView arrow3 = dialog.findViewById(R.id.arrow3);
             arrow3.setImageResource(R.drawable.arrow3_removebg);
+            float arrow3size = getResources().getDimension(R.dimen.tab_arrow1_margin_start);
+            appointment.setPadding((int) arrow3size, 0, 0, 0);
+
             Animation animation2 =
                     AnimationUtils.loadAnimation(getApplicationContext(),
                             R.anim.blink);
@@ -116,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
 //
                 TextView add = dialog.findViewById(R.id.add);
                 add.setText("Tap to add \n a patient");
+
+
                 TextView queue = dialog.findViewById(R.id.queue);
                 queue.setText("Patient Queue");
                 Animation animationQueue =

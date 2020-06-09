@@ -4,10 +4,13 @@
     <dimen name="arrow2_margin_end">62dp</dimen>
     <dimen name="arrow1_margin_end">15dp</dimen>
     <dimen name="arrow3_margin_end">20dp</dimen>
+    <dimen name="text3_margin_end">80dp</dimen>
 
-    <dimen name="tab_arrow2_margin_start">230dp</dimen>
-    <dimen name="tab_text1_margin_start">250dp</dimen>
-    <dimen name="tab_text2_margin_start">380dp</dimen>
-    <dimen name="tab_arrow1_margin_start">200dp</dimen>
+    <dimen name="tab_arrow2_margin_start">160dp</dimen>
+    <dimen name="tab_text1_margin_start">300dp</dimen>
+    <dimen name="tab_text2_margin_start">200dp</dimen>
+    <dimen name="tab_arrow1_margin_start">140dp</dimen>
+    <dimen name="tab_arrow3_margin_start">20dp</dimen>
+
 
 </resources>

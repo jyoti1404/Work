@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/arrow3"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:background="@null"
         android:fontFamily="serif"
         android:text="Tap to add \n a patient"
@@ -90,8 +90,8 @@
         android:textColor="#2E8022"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/notification"
         app:layout_constraintTop_toBottomOf="@+id/notification" />
 
     <TextView
