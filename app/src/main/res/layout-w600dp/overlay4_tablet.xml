@@ -39,8 +39,8 @@
 
     <ImageView
         android:id="@+id/arrow10"
-        android:layout_width="86dp"
-        android:layout_height="218dp"
+        android:layout_width="91dp"
+        android:layout_height="170dp"
         android:layout_marginTop="84dp"
         android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
         android:id="@+id/symptons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="156dp"
         android:background="@null"
         android:fontFamily="serif"
         android:text="Tap to enter \nsymptons of patient"
@@ -80,6 +80,7 @@
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/arrow10" />
 
@@ -87,7 +88,7 @@
         android:id="@+id/diagnosis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:background="@null"
         android:fontFamily="serif"
         android:text="Tap to enter \ndiagnosis of patient"
@@ -96,7 +97,6 @@
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/symptons" />
 
@@ -113,16 +113,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diagnosis"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintVertical_bias="0.099" />
 
     <ImageView
         android:id="@+id/arrow11"
         android:layout_width="71dp"
         android:layout_height="84dp"
-        android:layout_marginTop="16dp"
         android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
@@ -144,19 +143,18 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/arrow11"
         app:layout_constraintEnd_toStartOf="@+id/doctor"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diagnosis"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/arrow12"
         android:layout_width="69dp"
         android:layout_height="84dp"
-        android:layout_marginTop="12dp"
         android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toEndOf="@+id/doctor"
         app:layout_constraintTop_toBottomOf="@+id/doctor"
         app:srcCompat="@drawable/arrow10_removebg" />
@@ -174,21 +172,23 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/arrow12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toEndOf="@+id/doctor"
         app:layout_constraintTop_toBottomOf="@+id/diagnosis"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/arrow13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="48dp"
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrow11"
+        app:layout_constraintVertical_bias="0.927"
         app:srcCompat="@drawable/arrow12_removebg" />
 
     <TextView
@@ -215,10 +215,10 @@
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toEndOf="@+id/arrow13"
         app:layout_constraintTop_toBottomOf="@+id/arrow12"
-        app:layout_constraintVertical_bias="0.455"
+        app:layout_constraintVertical_bias="0.293"
         app:srcCompat="@drawable/arrow13_removebg" />
 
     <TextView
@@ -234,9 +234,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="@+id/arrow14"
         app:layout_constraintTop_toBottomOf="@+id/arrow12"
-        app:layout_constraintVertical_bias="0.509" />
+        app:layout_constraintVertical_bias="0.323" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
