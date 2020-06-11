@@ -72,6 +72,7 @@ public class Main4Activity extends AppCompatActivity {
                 dialog.setCancelable(true);
                 dialog.show();
             }
+            getSharedPreferences("PREFERENCE4", MODE_PRIVATE).edit().putBoolean("isFirstRun4", false).commit();
         }
         else {
             if (isFirstRun4){
