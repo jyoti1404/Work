@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -71,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 //            // Start the animation (looped playback by default).
 //            frameAnimation.start();
 //
-                TextView add = dialog.findViewById(R.id.add);
+                TextView add = dialog.findViewById(R.id.search_add);
                 add.setText("Tap to add \n a patient");
                 add.setTextSize(22);
                 Animation textanimation2 =
@@ -138,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 //            // Start the animation (looped playback by default).
 //            frameAnimation.start();
 //
-                TextView add = dialog.findViewById(R.id.add);
+                TextView add = dialog.findViewById(R.id.search_add);
                 add.setText("Tap to add \n a patient");
                 Animation textanimation4 =
                         AnimationUtils.loadAnimation(getApplicationContext(),
