@@ -27,7 +27,7 @@ public class Main3Activity extends AppCompatActivity {
         if (config2.smallestScreenWidthDp >= 600){
             if (isFirstRun3){
                 dialog2 = new Dialog(Main3Activity.this, R.style.Theme_AppCompat_Translucent);
-                dialog2.setContentView(R.layout.overlay4_tab);
+                dialog2.setContentView(R.layout.overlay4_tablet);
 
                 ImageView arrow9 = dialog2.findViewById(R.id.arrow9);
                 arrow9.setImageResource(R.drawable.arrow10_removebg);
@@ -49,8 +49,6 @@ public class Main3Activity extends AppCompatActivity {
                 TextView caseno2 = dialog2.findViewById(R.id.caseno2);
                 caseno2.setText("Tap to write \n case no. of patient");
 
-                TextView patient_info = dialog2.findViewById(R.id.patient_info);
-                patient_info.setText("Tap here to see \n patients information");
 
                 TextView symptoms = dialog2.findViewById(R.id.symptons);
                 symptoms.setText("Tap to enter \nsymptoms of patient");
@@ -130,9 +128,6 @@ public class Main3Activity extends AppCompatActivity {
 
                 TextView caseno2 = dialog2.findViewById(R.id.caseno2);
                 caseno2.setText("Tap to write \n case no. of patient");
-
-                TextView patient_info = dialog2.findViewById(R.id.patient_info);
-                patient_info.setText("Tap here to see \n patients information");
 
                 TextView symptoms = dialog2.findViewById(R.id.symptons);
                 symptoms.setText("Tap to enter \nsymptoms of patient");

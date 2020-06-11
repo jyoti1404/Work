@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 add.startAnimation(textanimation2);
 
                 TextView queue = dialog.findViewById(R.id.queue);
-                queue.setText("Patient Queue");
+                queue.setText("Patient Queue \n 1. Click on menu button. \n 2. Click on add patient.");
                 queue.setTextSize(40);
 
                 ImageView arrow2 = dialog.findViewById(R.id.arrow2);
@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                 add.startAnimation(textanimation4);
 
                 TextView queue = dialog.findViewById(R.id.queue);
-                queue.setText("Patient Queue");
+                queue.setText("Patient Queue \n 1. Click on menu button. \n 2. Click on add patient.");
                 Animation animationQueue =
                         AnimationUtils.loadAnimation(getApplicationContext(),
                                 R.anim.fade);
