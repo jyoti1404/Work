@@ -56,7 +56,7 @@ public class Main2Activity extends AppCompatActivity {
                                 R.anim.blink);
                 arrow5.startAnimation(animation5);
 
-                TextView name = dialog1.findViewById(R.id.name);
+                TextView name = dialog1.findViewById(R.id.reg_case);
                 name.setText("Type the name \n of patient to be \n searched");
                 name.setTextSize(20);
 
@@ -117,7 +117,7 @@ public class Main2Activity extends AppCompatActivity {
                                 R.anim.blink);
                 arrow5.startAnimation(animation5);
 
-                TextView name = dialog1.findViewById(R.id.name);
+                TextView name = dialog1.findViewById(R.id.reg_case);
                 name.setText("Type the name \n of patient to be \n searched");
 
                 ImageView arrow6 = dialog1.findViewById(R.id.arrow6);

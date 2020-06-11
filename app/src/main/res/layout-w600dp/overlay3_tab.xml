@@ -52,7 +52,7 @@
         app:srcCompat="@drawable/arrow6_removebg" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/reg_case"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -94,7 +94,7 @@
         app:layout_constraintBottom_toTopOf="@+id/arrow6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.617"
-        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/reg_case"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
