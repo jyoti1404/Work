@@ -33,7 +33,6 @@ public class AppIntro extends AppCompatActivity {
     private List<ImageView> dots;
     Button next, previous;
     int a;
-    TextView main;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +47,6 @@ public class AppIntro extends AppCompatActivity {
         sliderAdapter = new SliderAdapter(this);
         next = findViewById(R.id.next);
         previous = findViewById(R.id.previous);
-        main = findViewById(R.id.main);
 
         if (isFirstRun) {
 
