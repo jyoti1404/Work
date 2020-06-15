@@ -29,7 +29,7 @@ public class AppIntro extends AppCompatActivity {
     LinearLayout layout;
     SliderAdapter sliderAdapter;
    // TextView[] dots;
-    private final static int NUM_PAGES = 6;
+    private final static int NUM_PAGES = 12;
     private List<ImageView> dots;
     Button next, previous;
     int a;

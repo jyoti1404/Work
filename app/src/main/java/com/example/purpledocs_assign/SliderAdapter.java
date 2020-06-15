@@ -26,7 +26,13 @@ public class SliderAdapter extends PagerAdapter {
             R.drawable.image2,
             R.drawable.image9,
             R.drawable.image10,
-            R.drawable.image8
+            R.drawable.image8,
+            R.drawable.image11,
+            R.drawable.image12,
+            R.drawable.image13,
+            R.drawable.image15,
+            R.drawable.image14,
+            R.drawable.image16
     };
 
     public String[] slide_headings = {
@@ -35,16 +41,28 @@ public class SliderAdapter extends PagerAdapter {
             "SEARCH PATIENT",
             "SEARCH LIST",
             "EDIT APPOINTMENT",
-            "REGISTER PATIENT"
+            "REGISTER PATIENT",
+            "BOOK VIDEO CONSULTATION",
+            "VIDEO CONSULTATION LINK",
+            "BEGIN CONSULTATION",
+            "VIDEO CONSULTATION STARTS",
+            "DETAILS OF PATIENT",
+            "END VIDEO CONSULTATION"
     };
 
     public String[] slide_description = {
-        "Depicts list of appointment. Click menu on right hand side to see further options.",
+        "Depict list of appointments. Click menu on right hand side top corner to see further options.",
         "Different items are displayed. Click on any one.",
         "By clicking Search Record in the menu, search patient is shown. Any one field is mandatory to search a patient",
         "If the patient is registered, search list of related patients occurs. Click on required.",
         "Edit the appointment of patient selected",
-        "If the patient is not registered, register patient appears."
+        "If the patient is not registered, register patient appears.",
+        "Patient call hospital to book a video consultation. Hospital registers the patient using Add Patient.",
+        "After the payment, patient receives Video Consultation link.",
+        "The doctor can enter video consultation by clicking on the patient in the queue. Dialog Box will appear, click on Begin Consultation.",
+        "The consultation of doctor and patient will begin",
+        "Doctor can see the symptoms and enter the medicines.",
+        "End the consultation and go back to patient queue."
     };
 
     public int[] slide_background = {
@@ -53,7 +71,13 @@ public class SliderAdapter extends PagerAdapter {
         R.drawable.background3,
         R.drawable.background4,
         R.drawable.background5,
-        R.drawable.background6
+        R.drawable.background6,
+        R.drawable.background7,
+        R.drawable.background8,
+        R.drawable.background9,
+        R.drawable.background10,
+        R.drawable.background11,
+        R.drawable.background12
     };
 
 
